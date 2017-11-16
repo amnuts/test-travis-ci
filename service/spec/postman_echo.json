@@ -3523,7 +3523,7 @@
 								"exec": [
 									"var before = JSON.parse(responseBody).before;",
 									"",
-									"tests[\"Status code is 200\"] = responseCode.code === 200;",
+									"tests[\"Status code is 700\"] = responseCode.code === 700;",
 									"tests[\"Comparsion was correct\"] = before === true;"
 								]
 							}
