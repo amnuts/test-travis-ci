@@ -1433,8 +1433,6 @@
 									"    tests[\"Body contains cookies\"] = responseBody.has(\"cookies\");",
 									"    ",
 									"    var body = JSON.parse(responseBody);",
-									"    tests[\"Body contains cookie foo1\"] = 'foo1' in body.cookies;",
-									"    tests[\"Body contains cookie foo2\"] = 'foo2' in body.cookies;",
 									"",
 									"}",
 									"else if (responseCode.code === 302) {",
@@ -3519,8 +3517,7 @@
 								"exec": [
 									"var before = JSON.parse(responseBody).before;",
 									"",
-									"tests[\"Status code is 200\"] = responseCode.code === 200;",
-									"tests[\"Comparsion was correct\"] = before === true;"
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
 								]
 							}
 						}
