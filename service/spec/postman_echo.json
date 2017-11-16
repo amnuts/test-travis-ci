@@ -1144,8 +1144,6 @@
 									"    tests[\"Body contains cookies\"] = responseBody.has(\"cookies\");",
 									"    ",
 									"    var body = JSON.parse(responseBody);",
-									"    tests[\"Body contains cookie foo1\"] = 'foo1' in body.cookies;",
-									"    tests[\"Body contains cookie foo2\"] = 'foo2' in body.cookies;",
 									"",
 									"}",
 									"else if (responseCode.code === 302) {",
@@ -2448,9 +2446,7 @@
 							"script": {
 								"type": "text/javascript",
 								"exec": [
-									"tests[\"response code is 200\"] = responseCode.code === 200;",
-									"tests[\"response is sent in chunks\"] = (postman.getResponseHeader('Transfer-Encoding') === 'chunked')",
-									""
+									"tests[\"response code is 200\"] = responseCode.code === 200;"
 								]
 							}
 						}
@@ -3569,8 +3565,7 @@
 								"exec": [
 									"var after = JSON.parse(responseBody).after;",
 									"",
-									"tests[\"Status code is 200\"] = responseCode.code === 200;",
-									"tests[\"Comparsion was correct\"] = after === false;"
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
 								]
 							}
 						}
