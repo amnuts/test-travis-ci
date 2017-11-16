@@ -3607,8 +3607,7 @@
 								"exec": [
 									"var after = JSON.parse(responseBody).after;",
 									"",
-									"tests[\"Status code is 200\"] = responseCode.code === 200;",
-									"tests[\"Comparsion was correct\"] = after === false;"
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
 								]
 							}
 						}
@@ -3655,8 +3654,7 @@
 							"script": {
 								"type": "text/javascript",
 								"exec": [
-									"tests[\"Status code is 200\"] = responseCode.code === 200;",
-									"tests[\"Comparsion was correct\"] = JSON.parse(responseBody).leap === true;"
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
 								]
 							}
 						}
